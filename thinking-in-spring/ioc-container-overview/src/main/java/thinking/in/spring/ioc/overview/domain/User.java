@@ -30,6 +30,9 @@ public class User {
     }
 
     public static User createUser(){
-        return new User();
+        User user = new User();
+        user.setId("1");
+        user.setName("name");
+        return user;
     }
 }

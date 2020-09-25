@@ -13,8 +13,8 @@ import thinking.in.spring.ioc.overview.domain.User;
 import java.util.Map;
 
 
-@Import(AnnotationBeanAliasDemo.Config.class)
-public class AnnotationBeanAliasDemo {
+@Import(AnnotationBeanDefinitionDemo.Config.class)
+public class AnnotationBeanDefinitionDemo {
     public static void main(String[] args) {
         //创建BeanFactory容器
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext();

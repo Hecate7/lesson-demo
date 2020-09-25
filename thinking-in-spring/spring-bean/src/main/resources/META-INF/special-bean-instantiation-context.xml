@@ -4,8 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user-by-static-method" class="thinking.in.spring.ioc.overview.domain.User" factory-method="createUser">
-
+    <bean id="userFactoryServiceLoader" class="org.springframework.beans.factory.serviceloader.ServiceLoaderFactoryBean">
+        <property name="serviceType" value="thinking.in.spring.bean.factory.UserFactory"/>
     </bean>
+
 </beans>
 
