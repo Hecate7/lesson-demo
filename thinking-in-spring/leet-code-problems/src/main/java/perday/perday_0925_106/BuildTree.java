@@ -1,9 +1,8 @@
-package perday.perday_106_0925;
+package perday.perday_0925_106;
 
 import common.TreeNode;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class BuildTree {
