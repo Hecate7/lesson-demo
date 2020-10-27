@@ -1,15 +1,29 @@
 package thinking.in.spring.ioc.overview.domain;
 
+import org.springframework.core.io.Resource;
+import thinking.in.spring.ioc.overview.enums.City;
+
+import java.util.Arrays;
+import java.util.List;
+
 public class User {
-    private String id;
+    private long id;
 
     private String name;
 
-    public String getId() {
+    private City city;
+
+    private City[] workCities;
+
+    private List<City> lifeCities;
+
+    private Resource configFileLocation;
+
+    public long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -21,17 +35,53 @@ public class User {
         this.name = name;
     }
 
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+
+    public Resource getConfigFileLocation() {
+        return configFileLocation;
+    }
+
+    public void setConfigFileLocation(Resource configFileLocation) {
+        this.configFileLocation = configFileLocation;
+    }
+
+    public City[] getWorkCities() {
+        return workCities;
+    }
+
+    public void setWorkCities(City[] workCities) {
+        this.workCities = workCities;
+    }
+
+    public List<City> getLifeCities() {
+        return lifeCities;
+    }
+
+    public void setLifeCities(List<City> lifeCities) {
+        this.lifeCities = lifeCities;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", name='" + name + '\'' +
+                ", city=" + city +
+                ", workCities=" + Arrays.toString(workCities) +
+                ", lifeCities=" + lifeCities +
+                ", configFileLocation=" + configFileLocation +
                 '}';
     }
 
     public static User createUser(){
         User user = new User();
-        user.setId("1");
+        user.setId(1);
         user.setName("name");
         return user;
     }

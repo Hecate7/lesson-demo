@@ -3,6 +3,7 @@ package thinking.in.spring.ioc.overview.dependency.lookup;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectFactory;
+import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import thinking.in.spring.ioc.overview.annotation.Super;
 import thinking.in.spring.ioc.overview.domain.User;
